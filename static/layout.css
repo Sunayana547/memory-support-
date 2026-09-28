@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-shell {
+  height: 100vh;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  flex: none;
+}
+
+.dashboard {
+  height: calc(100vh - 102px);
+  min-height: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+.customer-panel,
+.memories-panel,
+.conversation-panel {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.memories-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.memories-list {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 6px;
+}
+
+.conversation-panel {
+  height: 100%;
+}
+
+.chat-box {
+  min-height: 0;
+  overscroll-behavior: contain;
+}

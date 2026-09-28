@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Support AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+</head>
+<body><main class="app-shell">
+  <header class="topbar"><div class="brand-lockup"><div class="brand-mark" aria-hidden="true">✦</div><div><h1>Memory Support AI</h1><p>AI customer support powered by persistent memory</p></div></div><div class="connection-pill"><span></span> Hindsight Connected</div></header>
+  <section class="dashboard">
+    <aside class="customer-panel"><p class="eyebrow">Customer</p><div class="customer-card"><div class="avatar">R</div><div><h2>Rahul</h2><p>Customer ID: #1001</p></div></div><div class="memory-card"><div class="section-icon">✦</div><h2>Memory</h2><p>The agent remembers previous customer interactions and uses them to personalize responses.</p></div><div class="quick-info"><p class="eyebrow">Quick Info</p><div class="info-row"><b>▣</b><span><strong>Device</strong>Android (Mobile App)</span></div><div class="info-row"><b>▤</b><span><strong>Primary Issue</strong>Payment Failure</span></div><div class="info-row"><b>◷</b><span><strong>Last Interaction</strong><span id="lastInteraction">2026-09-27</span></span></div><div class="info-row"><b>✓</b><span><strong>Status</strong><em>Active Customer</em></span></div></div></aside>
+    <section class="conversation-panel"><div class="conversation-header"><h2>Customer Conversation</h2><span id="chatStatus">Ready</span></div><div class="chat-box" id="chatBox"><article class="chat-row ai-row"><div class="message-avatar ai-avatar">✦</div><div class="message ai-message"><strong>AI Support Agent</strong><p>Hello Rahul! How can I help you today?</p><time>10:15 AM</time></div></article></div><form class="input-area" id="chatForm"><label class="upload-button" for="pdfFile" title="Upload a PDF">＋</label><input id="pdfFile" type="file" accept=".pdf" hidden><input id="userInput" autocomplete="off" placeholder="Describe your problem..." aria-label="Describe your problem"><button id="sendButton" type="submit">➤ <span>Send</span></button></form></section>
+    <aside class="memories-panel"><div class="memories-heading"><div class="section-icon">✦</div><div><h2>Relevant Memories</h2><p>These are the memories used by the agent to generate the response.</p></div></div><div id="memoriesList" class="memories-list"><p class="empty-memory">No relevant memories found.</p></div></aside>
+  </section>
+</main><script src="{{ url_for('static', filename='script.js') }}"></script></body></html>
