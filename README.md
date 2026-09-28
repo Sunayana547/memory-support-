@@ -298,4 +298,5 @@ Built for HackwithHyderabad 3.0, this project explores AI agents with persistent
 
 ## Team
 
-[Add team members here]
+Sunayana
+Pavan
